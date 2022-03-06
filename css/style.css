@@ -707,6 +707,10 @@ font-family: "Montserrat";
 .maps-lists{
     display: none;
 }
+.mob-footer{
+    display: none;
+
+}
 @media (max-width:1200px){
     .maps {
         margin-top: 165px;
@@ -759,7 +763,7 @@ font-family: "Montserrat";
 }
 .footer > .ftcontainer{
     margin: 50px auto;
-    max-width: 1300px;
+    max-width: 1200px;
 }
 .ft-text{
     font-size: 14px;
@@ -795,6 +799,10 @@ font-family: "Montserrat";
     .tell > a {
         font-size: 15px;
     }
+    .mob-footer{
+        display: block;
+
+    }
 }
 @media (max-width:500px){
   
@@ -810,4 +818,120 @@ font-family: "Montserrat";
         margin: 14px auto !important;
 
     }
+}
+.form-box-container{
+    max-width: 878px;
+filter: drop-shadow(0 0 32.5px rgba(0,0,0,0.31));
+background-color: #ffffff;
+margin: auto;
+padding: 20px;
+}
+.title-form{
+    font-size: 34px;
+letter-spacing: 1px;
+line-height: 36px;
+color: #c63417;
+font-weight: 300;
+font-family: "Montserrat";
+text-align: center;
+}
+.form-container{
+    max-width: 528px;
+    margin: 23px auto;
+}
+.form-item{
+    max-width: 438px;
+    margin: auto;
+    margin-bottom: 23px;
+    position: relative;
+}
+.form-item > input{
+    padding: 19px;
+background-color: #e7e7e7;
+width: 100%;
+font-size: 16px;
+
+color: #252525;
+font-weight: 300;
+font-family: "Montserrat";
+border: unset;
+
+}
+.form-item > p{
+    font-size: 16px;
+color: #252525;
+font-weight: 700;
+font-family: "Montserrat";
+}
+.it-country{
+    position: absolute;
+    right: 11px;
+    top: 40px;
+}
+.it-country > span{
+    font-size: 16px;
+line-height: 51px;
+color: #252525;
+font-weight: 300;
+font-family: "Montserrat";
+}
+.form-item > textarea{
+    width: 100%;
+    height: 99px;
+    background-color: #e7e7e7;
+    border: none;
+    padding: 15px;
+
+}
+.form-item > button{
+    font-size: 14px;
+letter-spacing: 1px;
+line-height: 51px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+background-color: #c63417;
+border: none;
+width: 100%;
+text-transform: uppercase;
+}
+.star{
+    color: #c63417;
+}
+.has-account{
+    font-size: 16px;
+line-height: 51px;
+text-decoration: underline;
+color: #797979;
+font-weight: 700;
+font-family: "Montserrat";
+text-align: center;
+    display: block;
+}
+.remmeber{
+    font-size: 14px;
+color: #4567be;
+font-weight: 300;
+font-family: "Montserrat";
+text-align: right;
+
+}
+.lbl{
+    font-size: 14px;
+color: #252525;
+font-weight: 300;
+font-family: "Montserrat";
+}
+.lbl > input{
+    width: 16px;
+height: 16px;
+background-color: #e7e7e7;
+margin: 0 !important;
+
+}
+.rmb-box{
+    margin: auto !important;
+    max-width: 465px;
+
 }

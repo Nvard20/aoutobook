@@ -19,7 +19,7 @@
                     <div class="col-sm-2 link"><a href="#">Автосерви</a></div>
                     <div class="col-sm-2 link"><a href="#">Автосерви</a></div>
                     <div class="col-sm-4 logout">
-                        <a href="#" class="log-out ">
+                        <a href="#" class="log-out " data-toggle="modal" data-target="#myModallogin">
                             <img src="img/login.png" alt="">
                             Вход в  личный кабинет
                         </a>
@@ -42,7 +42,7 @@
                                 <span class="address">
                                     Город: <span class="city">Москва</span>
                                 </span>
-                                <span class="back-tell"><a href="#">Обратный звонок</a></span>
+                                <span class="back-tell"><a href="#" data-toggle="modal" data-target="#myModal">Обратный звонок</a></span>
 
                             </div>
                         
@@ -65,7 +65,7 @@
                         <a href="#" class="btnaouto col-xs-3">
                             Подключить автосервис
                         </a>
-                        <a href="#" class="btnreg col-xs-3 ">
+                        <a href="#" class="btnreg col-xs-3 " data-toggle="modal" data-target="#myModalreg">
                             Регистрация клиента
                         </a>
                     </div>
@@ -90,7 +90,7 @@
                         <div class="tell">
                             <img src="img/phone_icon.png" alt="">
                             <a href="tel:+7 927 316-28-30 ">+7 927 316-28-30 </a>
-                            <span class="back-tell"><a href="#">Обратный звонок</a></span>
+                            <span class="back-tell"><a href="#" data-toggle="modal" data-target="#myModal">Обратный звонок</a></span>
                             <span class="mail">
                                 <img src="img/email.png" alt="">
                                 <span>Autobook.gmail.ru</span>
@@ -503,8 +503,124 @@
         </div>
        </div>
     </footer>
+  
+<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <div class="form-box-container">
+            <h2 class="title-form">Заказ обратного звонка</h2>
+            <div class="form-container">
+                <form action="" class="form">
+                    <div class="form-item">
+                        <p>Ваше имя</p>
+                        <input type="text" placeholder="Козлов Сергей Владимирович">
+                    </div>
+                    <div class="form-item">
+                        <p>Телефон</p>
+                        <input type="text" placeholder="+7 (905) 775-55 -67">
+                        <div class="it-country">
+                            <span>Россия</span>
+                            <img src="img/rus.png" alt="">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <p>Ваш вопрос</p>
+                        <textarea></textarea>
+                    </div>
+                    <div class="form-item">
+                        <button>заказать звонок</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="modal fade" id="myModalreg" role="dialog">
+        <div class="modal-dialog">
+        
+          <div class="form-box-container">
+              <h2 class="title-form">Регистрация компании</h2>
+              <div class="form-container">
+                  <form action="" class="form">
+                      <div class="form-item">
+                          <p>Наименование <span class="star">*</span></p>
+                          <input type="text" >
+                      </div>
+                      <div class="form-item">
+                        <p>Контактное лицо <span class="star">*</span></p>
+                        <input type="text" >
+                    </div>
+                    <div class="form-item">
+                        <p>Email <span class="star">*</span></p>
+                        <input type="text" >
+                    </div>
+                    <div class="form-item">
+                        <p>Телефон <span class="star">*</span></p>
+                        <input type="text" >
+                    </div>
+                    <div class="form-item">
+                        <p>Пароль <span class="star">*</span></p>
+                        <input type="password" >
+                    </div>
+                
+                      <div class="form-item">
+                          <button>Зарегистрироваться</button>
+                      </div>
+                      <div class="form-item">
+                          <a href="#" class="has-account">Уже есть аккаунт?</a>
+                      </div>
+                  </form>
+              </div>
+          </div>
+         
+        </div>
+      </div>
+      <div class="modal fade" id="myModallogin" role="dialog">
+        <div class="modal-dialog">
+        
+          <div class="form-box-container">
+              <h2 class="title-form">Вход в личный кабинет</h2>
+              <div class="form-container">
+                  <form action="" class="form">
+                    <div class="form-item">
+                        <p>Email</p>
+                        <input type="text" >
+                    </div>
+                      <div class="form-item">
+                          <p>Пароль </p>
+                          <input type="text" >
+                      </div>
+                    
+                
+                
+                      <div class="form-item">
+                          <button>Войти</button>
+                      </div>
+                      <div class="form-item row rmb-box">
+                         <div class="col-sm-6">
+                             <label class="lbl">
+                                 <input type="checkbox">
+                                 <span>Запомнить меня</span>
+                             </label>
+                         </div>
+                         <div class="col-sm-6">
+                             <a href="#" class="remmeber">Забыли пароль?</a>
+                         </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+         
+        </div>
+      </div>
+  </div>
+ 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
