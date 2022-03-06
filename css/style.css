@@ -647,7 +647,11 @@ font-family: "Montserrat";
 }
 .cover-box{
     width: 100%;
+    background-size: contain;
+    margin: auto;
+    background-position: right;
 }
+
 }
 @media (max-width:1000px){
     .advbox {
@@ -703,6 +707,11 @@ font-family: "Montserrat";
 .maps-lists{
     display: none;
 }
+@media (max-width:1200px){
+    .maps {
+        margin-top: 165px;
+    }
+}
 @media (max-width:1000px){
     .maps {
         margin-top: 250px;
@@ -714,6 +723,8 @@ font-family: "Montserrat";
     }
     .maps {
         margin-top: 185px;
+        margin-bottom: 50px;
+
     }
     
 .ul-list > div > a{
@@ -733,4 +744,70 @@ font-family: "Montserrat";
     color: #e6310d;
     border-bottom: 1px solid;
 }
+}
+.footer{
+    background-color: #e8e8e8;
+    padding: 10px;
+}
+.first-col > a{
+    font-size: 14px;
+line-height: 45px;
+text-decoration: underline;
+color: #393939;
+font-weight: 300;
+font-family: "Montserrat";
+}
+.footer > .ftcontainer{
+    margin: 50px auto;
+    max-width: 1300px;
+}
+.ft-text{
+    font-size: 14px;
+line-height: 25px;
+color: #333333;
+font-weight: 300;
+font-family: "Montserrat";
+max-width: 508px;
+
+}
+.hd{
+    font-size: 18px;
+color: #393939;
+font-weight: 300;
+font-family: "Montserrat";
+}
+.mail > img{
+    margin-right: 3px;
+
+}
+@media (max-width:1200px){
+    .logo-footer > img{
+        width: 200px;
+    }
+}
+@media (max-width:1000px){
+    .inner-footer{
+        display: none;
+    }
+    .first-col > a{
+        line-height: unset;
+    }
+    .tell > a {
+        font-size: 15px;
+    }
+}
+@media (max-width:500px){
+  
+    .ft-text{
+        display: none;
+    }
+    .logo-footer{
+        display: block;
+    margin-bottom: 20px;
+   
+    }
+    .ftcontainer{
+        margin: 14px auto !important;
+
+    }
 }
